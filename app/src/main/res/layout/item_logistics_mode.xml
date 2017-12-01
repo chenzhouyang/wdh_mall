@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/DIMEN_15dp"
+        android:paddingTop="@dimen/DIMEN_15dp">
+        <TextView
+            android:id="@+id/ck_chose_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@mipmap/fzf"
+             />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_6dp"
+            android:layout_toRightOf="@id/ck_chose_select"
+            android:text="默认运费模板"
+            android:textColor="#333333"
+            android:textSize="@dimen/DIMEN_15sp" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/DIMEN_6dp"
+            android:layout_toRightOf="@id/ck_chose_select"
+            android:text="默认运费：全国所有地区免邮"
+            android:textColor="#909090"
+            android:textSize="@dimen/DIMEN_12sp" />
+
+        <ImageView
+            android:id="@+id/img_select"
+            android:layout_width="@dimen/DIMEN_20dp"
+            android:layout_height="@dimen/DIMEN_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/logistics_edit" />
+    </RelativeLayout>
+</LinearLayout>

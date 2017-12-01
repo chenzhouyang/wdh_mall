@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_10dp"
+        android:paddingRight="@dimen/DIMEN_10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_bus_name"
+            android:layout_width="@dimen/DIMEN_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/goods_buy_shop"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#262626"
+            android:textSize="@dimen/DIMEN_12sp"
+            android:drawablePadding="@dimen/DIMEN_11dp"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审批状态"
+            android:textColor="#ef3851"
+            android:textSize="@dimen/DIMEN_12sp"/>
+    </LinearLayout>
+
+    <com.yskj.wdh.widget.NoScrollListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#f3f3f3"
+        android:dividerHeight="@dimen/DIMEN_5dp"></com.yskj.wdh.widget.NoScrollListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_35dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingRight="@dimen/DIMEN_10dp">
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="共计件商品"
+            android:textColor="#181818"
+            android:textSize="@dimen/DIMEN_12sp"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/DIMEN_11dp"
+            android:text="合计："
+            android:textColor="#181818"
+            android:textSize="@dimen/DIMEN_12sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_45dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/DIMEN_10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_cancel_order"
+            android:layout_width="@dimen/DIMEN_75dp"
+            android:layout_height="@dimen/DIMEN_25dp"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textColor="#f03e57"
+            android:background="@drawable/round_corner_dfdfdf"
+            android:textSize="@dimen/DIMEN_11sp"/>
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="@dimen/DIMEN_75dp"
+            android:layout_height="@dimen/DIMEN_25dp"
+            android:gravity="center"
+            android:text="通过审批"
+            android:textColor="#f03e57"
+            android:background="@drawable/round_corner_dfdfdf"
+            android:textSize="@dimen/DIMEN_11sp"
+            android:layout_marginLeft="@dimen/DIMEN_10dp"/>
+    </LinearLayout>
+</LinearLayout>

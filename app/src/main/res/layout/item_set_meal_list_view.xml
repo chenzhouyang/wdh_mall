@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/DIMEN_5dp"
+    android:paddingBottom="@dimen/DIMEN_5dp"
+    >
+    <LinearLayout
+        android:id="@+id/item_set_meal_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/set_meal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/xiaohao"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/set_meal_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/xiaohao" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/kuang_"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_10dp"
+            android:layout_marginRight="@dimen/DIMEN_20dp">
+            <!-- 减少商品数量的布局 -->
+
+            <ImageView
+                android:id="@+id/set_meal_sub"
+                android:layout_width="@dimen/DIMEN_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/minus" />
+
+
+            <!-- 红包数量的布局 -->
+            <TextView
+                android:id="@+id/set_meal_num"
+                android:layout_width="@dimen/DIMEN_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_15sp">
+
+            </TextView>
+            <!-- 增加红包数量的布局 -->
+
+            <ImageView
+                android:id="@+id/set_meal_add"
+                android:layout_width="@dimen/DIMEN_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/plus" />
+            <!-- 显示红包数量的布局 -->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/select_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/dian_w"
+            android:layout_marginRight="@dimen/DIMEN_20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

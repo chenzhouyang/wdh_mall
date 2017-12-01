@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_41dp"
+        android:layout_marginLeft="@dimen/DIMEN_14dp"
+        android:layout_marginRight="@dimen/DIMEN_14dp"
+        android:layout_marginTop="@dimen/DIMEN_18dp"
+        android:background="@drawable/round_cdd5454_stoke"
+        android:paddingLeft="@dimen/DIMEN_7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="*"
+            android:textColor="#f14961"
+            android:textSize="@dimen/DIMEN_13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_9dp"
+            android:gravity="center_vertical"
+            android:text="意向区县"
+            android:textColor="#1b1b1b" />
+
+        <TextView
+            android:id="@+id/et_county"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

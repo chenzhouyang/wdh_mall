@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">唯多惠商家</string>
+    <string name="scan_text"></string>
+    <string name="pm_business_project_manager_title_content">商品管理</string>
+    <string name="pm_business_project_manager_menu">新增</string>
+    <string name="pm_business_project_manager_all">全部 ▽ </string>
+    <string name="pm_business_project_manager_on_lined">已上架 ▽ </string>
+    <string name="pm_business_project_manager_out_lined">已下架 ▽ </string>
+    <string name="pm_business_project_manager_abandoned">已废弃 ▽ </string>
+    <string name="pm_business_project_manager_remind_tip1">没有相关商品信息</string>
+    <string name="pm_business_project_manager_remind_tip2">您还不是商家</string>
+    <string name="pm_business_project_manager_remind_tip3">参数错误</string>
+    <string name="pm_business_project_manager_remind_tip4">套餐保存成功</string>
+    <string name="pm_business_project_manager_remind_tip5">请完善信息</string>
+    <string name="pm_business_project_manager_ask_on">上架</string>
+    <string name="pm_business_project_manager_ask_out">下架</string>
+    <string name="pm_business_project_manager_up_success">上架成功</string>
+    <string name="pm_business_project_manager_down_success">下架成功</string>
+    <string name="pm_business_project_manager_delete_success">删除成功</string>
+    <string name="pm_business_project_manager_remind_abandoned">商品已废弃,此操作不可用</string>
+    <string name="pm_business_project_manager_edit">编辑</string>
+    <string name="pm_business_project_manager_updata">更新:</string>
+    <string name="pm_business_project_manager_delete">删除</string>
+    <string name="pm_new_add_content_title_content">商品编辑</string>
+    <string name="pm_new_add_content_title_menu">保存</string>
+    <string name="pm_new_add_content_snack">小吃(费率3%)</string>
+    <string name="pm_new_add_content_short_order">快餐(费率2%)</string>
+    <string name="pm_new_add_content_upload_image">上传图片</string>
+    <string name="pm_new_add_content_upload_image_success">图片上传成功</string>
+    <string name="pm_new_add_content_upload_image_fail">联网失败</string>
+    <string name="pm_new_add_content_item1">品类</string>
+    <string name="pm_new_add_content_item1_content">请选择品类</string>
+    <string name="pm_new_add_content_item2">门店</string>
+    <string name="pm_new_add_content_item3">套餐名称</string>
+    <string name="pm_new_add_content_item4">套餐内容</string>
+    <string name="pm_new_add_content_item5">团购价</string>
+    <string name="pm_new_add_content_item6">可抵充百分比</string>
+    <string name="pm_new_add_content_item7">有效期</string>
+    <string name="pm_new_add_content_item8">购买须知</string>
+    <string name="pm_new_add_content_item9">经营类型</string>
+    <string name="pm_new_add_content_save_remind">项目保存成功</string>
+    <string name="pm_buy_notice_title_content">购买须知</string>
+    <string name="pm_buy_notice_category_name1">是否支持极速退款</string>
+    <string name="pm_buy_notice_category_name2">是否支持wifi</string>
+    <string name="pm_buy_notice_category_name3">是否展示发票</string>
+    <string name="pm_buy_notice_category_name4">同时享有优惠</string>
+    <string name="pm_buy_notice_category_name5">是否预约</string>
+    <string name="pm_buy_notice_category_name6">是否限制最高销量（接待量）</string>
+    <string name="pm_buy_notice_category_name7">是否限购团购券</string>
+    <string name="pm_buy_notice_category_name8">是否限用团购券</string>
+    <string name="pm_buy_notice_category_text0">支持极速退款</string>
+    <string name="pm_buy_notice_category_text1">支持WIFI</string>
+    <string name="pm_buy_notice_category_text2">开具发票</string>
+    <string name="pm_buy_notice_category_text3">同时享有优惠</string>
+    <string name="pm_buy_notice_category_text4">需要预约</string>
+    <string name="pm_buy_notice_category_text5">限制最高销量（接待量）</string>
+    <string name="pm_buy_notice_category_text6">限购团购券</string>
+    <string name="pm_buy_notice_category_text7">限用团购券</string>
+    <string name="pm_buy_notice_category_text8">限制团购券使用人数</string>
+    <string name="pm_meal_category_select_title_content">品类选择</string>
+    <string name="pm_new_add_set_meal_content_title_content">套餐条目</string>
+    <string name="pm_new_add_set_meal_add_attribute1">图片</string>
+    <string name="pm_new_add_set_meal_add_attribute2">名称</string>
+    <string name="pm_new_add_set_meal_add_attribute3">原价</string>
+    <string name="pm_new_add_set_meal_add_attribute4">简介</string>
+
+    <!--商家认证-->
+
+    <string name="business_zz_category_list_get_fail">经营类型列表获取失败</string>
+
+    <!--rp开头为红包相关-->
+
+    <!--标题栏-->
+    <string name="rp_red_packet_map_title_temp">标题</string>
+    <string name="rp_red_packet_map_menu_temp">菜单</string>
+    <string name="rp_red_packet_map_button_temp">按钮</string>
+    <!--红包地图-->
+    <string name="rp_red_packet_map_title">拆红包啦</string>
+    <string name="rp_red_packet_map_menu">红包记录</string>
+    <string name="rp_red_packet_map_send_packet_button">发送广告红包</string>
+    <!--发红包-->
+    <string name="rp_red_packet_title">发送红包</string>
+    <string name="rp_red_packet_menu"> </string>
+    <string name="rp_red_packet_upload_image">上传图片</string>
+    <string name="rp_red_packet_ad">广告语</string>
+    <string name="rp_red_packet_ad_content">请输入你的广告语</string>
+    <string name="rp_red_packet_number">红包数量</string>
+    <string name="rp_red_packet_number_tip">输入数量</string>
+    <string name="rp_red_packet_number_unit">个</string>
+    <string name="rp_red_packet_total_money">总金额</string>
+    <string name="rp_red_packet_total_money_tip">输入金额</string>
+    <string name="rp_red_packet_total_money_unit">元</string>
+    <string name="rp_red_packet_throw_range">投放范围</string>
+    <string name="rp_red_packet_throw_range_num">2</string>
+    <string name="rp_red_packet_throw_range_unit">km</string>
+    <string name="rp_red_packet_remind">提醒:严禁上传涉及黄赌毒、暴力等图片以及文字,否则您有被封号的危险</string>
+    <string name="rp_red_packet_send_packet_button">发送广告红包</string>
+    <string name="rp_red_packet_button">发送广告红包</string>
+    <string name="rp_red_packet_success">红包发送成功</string>
+    <string name="tv_show">显示结果</string>
+    <string name="bt_add">+</string>
+    <string name="bt_sub">-</string>
+    <string name="add">＋</string>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+</resources>

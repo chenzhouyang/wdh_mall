@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_actionbar" />
+
+    <include layout="@layout/gray_cut_off_line" />
+
+    <include layout="@layout/gray_cut_off_line" />
+
+    <include
+        android:id="@+id/new_add_meal_name"
+        layout="@layout/item_new_add_meal" />
+
+    <include
+        android:id="@+id/new_add_meal_price"
+        layout="@layout/item_new_add_meal_price" />
+
+    <TextView
+        android:id="@+id/new_add_meal_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50dp"
+        android:layout_marginLeft="@dimen/DIMEN_50dp"
+        android:layout_marginRight="@dimen/DIMEN_50dp"
+        android:layout_marginTop="@dimen/DIMEN_10dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xiaohao" />
+</LinearLayout>

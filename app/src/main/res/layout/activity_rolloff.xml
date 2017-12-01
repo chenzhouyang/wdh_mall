@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/huiyin"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/activity_title"/>
+   <!-- <RelativeLayout
+        android:id="@+id/top_title_ll"
+        android:layout_width="match_parent"
+        android:background="@color/layout_title_color"
+        android:layout_height="@dimen/DIMEN_50dp">
+
+        <ImageView
+            android:id="@+id/back_top_title_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:background="@color/a00000000"
+            android:src="@mipmap/left_arrow_yellow" />
+
+        <TextView
+            android:id="@+id/redlist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/a00000000"
+            android:gravity="center"
+            android:text="转出到可用通贝"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_20sp" />
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DIMEN_20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/DIMEN_20dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="金额"
+            android:textSize="@dimen/DIMEN_15sp"
+            android:textColor="@color/a000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:id="@+id/folloff_amount"
+            android:numeric="decimal"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/activity_red"
+        android:id="@+id/rolloff_hint"
+        android:visibility="gone"
+        android:text="注: 转出到本商户个人版账户, 转出后个人版提现将有3%手续费, 慎用"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aide"
+        android:id="@+id/rolloff_true"
+        android:layout_margin="@dimen/DIMEN_20dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="确认转出"
+            android:padding="@dimen/DIMEN_15dp"
+            android:textSize="@dimen/DIMEN_18sp"/>
+    </LinearLayout>
+</LinearLayout>

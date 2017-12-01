@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.yskj.wdh"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 3333
+        versionName "3.3.3.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        disable "ResourceType"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:23.0.3'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.guava:guava:20.0-rc1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+    compile project(path: ':PullListView')
+    compile 'com.pgyersdk:sdk:2.4.0'
+    compile 'com.orhanobut:logger:1.8'
+    compile 'org.litepal.android:core:1.3.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile files('libs/bsh-2.0b4.jar')
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+}

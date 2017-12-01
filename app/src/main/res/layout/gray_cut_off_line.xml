@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="@mipmap/line_one">
+    <!--用在布局中一些需要分割线的地方-->
+</View>

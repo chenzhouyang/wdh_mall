@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_theme">
+
+
+    <include layout="@layout/activity_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_history_checkedamount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_history_checkednumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_3dp"
+                android:text="0"
+                android:textColor="@color/fd3854"
+                android:textSize="@dimen/DIMEN_14sp" />
+
+            <TextView
+                android:id="@+id/tv_history_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_3dp"
+                android:text="验证量（张）"
+                android:textColor="@color/fd3854"
+                android:textSize="@dimen/DIMEN_15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/DIMEN_2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/DIMEN_20dp"
+            android:layout_marginTop="@dimen/DIMEN_20dp"
+            android:background="@color/B3B3B3" />
+
+        <LinearLayout
+            android:id="@+id/ll_history_projectnumber"
+            android:layout_width="@dimen/DIMEN_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_history_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_3dp"
+                android:text="0"
+                android:textColor="@color/a131017"
+                android:textSize="@dimen/DIMEN_14sp" />
+
+            <TextView
+                android:id="@+id/tv_history_projectnub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_3dp"
+                android:text="项目数（个）"
+                android:textColor="@color/a000001"
+                android:textSize="@dimen/DIMEN_15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_history_checked"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_2dp"
+        android:background="@color/B3B3B3" />
+
+    <LinearLayout
+        android:id="@+id/ll_history_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_0dp"
+        android:layout_weight="0.6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_history_today"
+            android:layout_width="@dimen/DIMEN_0dp"
+            android:layout_height="@dimen/DIMEN_25dp"
+            android:layout_marginLeft="@dimen/DIMEN_30dp"
+            android:layout_weight="1"
+            android:background="@color/fd3854"
+            android:text="今天"
+            android:textColor="@color/FFF9FF"
+            android:textSize="@dimen/DIMEN_16sp" />
+
+        <Button
+            android:id="@+id/btn_history_otherday"
+            android:layout_width="@dimen/DIMEN_0dp"
+            android:layout_height="@dimen/DIMEN_25dp"
+            android:layout_marginLeft="@dimen/DIMEN_30dp"
+            android:layout_weight="1"
+            android:background="@color/fd3854"
+            android:text="其他日期"
+            android:textColor="@color/FFF9FF"
+            android:textSize="@dimen/DIMEN_16sp" />
+
+        <View
+            android:layout_width="@dimen/DIMEN_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
+        <!--<TextView-->
+        <!--android:id="@+id/tv_history_data"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:background="#FF6091"-->
+        <!--android:text="日期:"-->
+        <!--android:textColor="#FFF9FF"-->
+        <!--android:textSize="16sp" />-->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/history_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_2dp"
+        android:background="@color/B3B3B3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_0dp"
+        android:layout_weight="7">
+
+        <com.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/xlv_checked_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/a00000000">
+
+        </com.pulltorefresh.library.PullToRefreshListView>
+
+    </LinearLayout>
+</LinearLayout>

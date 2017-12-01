@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/cashier_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@mipmap/qrcode_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_20dp"
+            android:orientation="vertical"
+            android:paddingLeft="80dp">
+
+
+            <TextView
+                android:id="@+id/proscenium_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/DIMEN_10dp"
+                android:maxLines="1"
+                android:text="10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="25dp">
+
+                        <TextView
+                            android:id="@+id/prosecnium_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="合计：268.00"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/item_proscenium_stuse"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/collect_btn"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="生成二付款维码"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:id="@+id/scan_prosecenium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="13dp"
+                                android:layout_weight="1"
+                                android:src="@mipmap/qrcode_image" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       >
+
+        <ImageView
+            android:id="@+id/item_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="right"
+            android:src="@mipmap/order_del"
+            />
+    </RelativeLayout>
+</LinearLayout>

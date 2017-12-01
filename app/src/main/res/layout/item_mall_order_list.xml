@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_43dp"
+            android:textSize="@dimen/DIMEN_13sp"
+            android:textColor="#4a4f51"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/DIMEN_15dp"
+            android:text="订单号："
+            />
+        <com.yskj.wdh.widget.NoScrollListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/white"
+            android:dividerHeight="@dimen/DIMEN_4dp">
+
+        </com.yskj.wdh.widget.NoScrollListView>
+        <TextView
+            android:id="@+id/tv_order_count_and_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_43dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/DIMEN_15dp"
+            android:textColor="#5b5b5b"
+            android:textSize="@dimen/DIMEN_13sp"
+            android:text="共件商品 合计：￥"
+            android:background="@color/white"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e2e2e2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_53dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/DIMEN_15dp">
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="@dimen/DIMEN_83dp"
+                android:layout_height="@dimen/DIMEN_30dp"
+                android:background="@drawable/round_corner_cacaca_stoke"
+                android:gravity="center"
+                android:textColor="#4e4c4c"
+                android:textSize="@dimen/DIMEN_13sp"
+                android:text="待发货"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

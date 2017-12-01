@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_theme"
+    android:background="#1eb4fe">
+
+    <include layout="@layout/activity_title" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30dp"
+            android:layout_marginRight="@dimen/DIMEN_30dp"
+            android:layout_marginTop="@dimen/DIMEN_50dp"
+            android:background="@mipmap/collect_money"
+            android:gravity="center_horizontal"
+            android:id="@+id/para_ll"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+            <ImageView
+                android:id="@+id/para_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_15dp"
+                android:layout_marginRight="@dimen/DIMEN_15dp"
+                />
+        </LinearLayout>
+            </FrameLayout>
+</LinearLayout>

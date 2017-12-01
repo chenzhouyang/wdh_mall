@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_actionbar" />
+
+    <include layout="@layout/gray_cut_off_line" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_45dp"
+        android:layout_marginTop="@dimen/DIMEN_0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/all_meal"
+            style="@style/selector_rbtn_blue_line"
+            android:checked="true"
+            android:text="全部" />
+
+        <RadioButton
+            android:id="@+id/on_lined"
+            style="@style/selector_rbtn_blue_line"
+            android:text="已上架" />
+
+        <RadioButton
+            android:id="@+id/out_lined"
+            style="@style/selector_rbtn_blue_line"
+            android:text="已下架" />
+
+        <RadioButton
+            android:id="@+id/abandoned"
+            style="@style/selector_rbtn_blue_line"
+            android:text="已废弃" />
+
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/meal_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/DIMEN_10dp"
+        android:layout_marginRight="@dimen/DIMEN_10dp"
+        android:scrollbars="none"
+        android:textColor="@color/black" />
+
+</LinearLayout>
